@@ -1,5 +1,6 @@
 package com.example.studikasus_mobile5
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -33,12 +34,18 @@ class TambahActivity : AppCompatActivity() {
             val kredit = hashMapOf(
                 "Nominal" to editNominal.toString(),
                 "Tenor" to editTenor.toString(),
+                "Angsuran" to binding.tfAngsuran.text.toString()
             )
 
             db.collection("mahasiswa").add(kredit)
-                .addOnSuccessListener {
+                .addOnSuccessListener { documentReference ->
                     Toast.makeText(this, "Berhasil Tambah Data",
                         Toast.LENGTH_SHORT).show()
+
+                    val intent = Intent(this, DataActivity::class.java)
+
+                    intent.putExtra( "idDoc", documentReference.id)
+                    startActivity(intent)
                 }
                 .addOnFailureListener { e ->
                     Log.w("TAG", "Error tambah data", e)
