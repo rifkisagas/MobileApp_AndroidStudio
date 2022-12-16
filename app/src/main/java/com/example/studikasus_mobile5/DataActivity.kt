@@ -24,7 +24,7 @@ class DataActivity : AppCompatActivity() {
             .addOnSuccessListener {
                 binding.edtNominal.setText(it.data?.get("Nominal").toString())
                 binding.edtTenor.setText(it.data?.get("Tenor").toString())
-                binding.edtAngsuran.setText(it.data?.get("Angsuran").toString())\
+                binding.edtAngsuran.setText(it.data?.get("Angsuran").toString())
                 it.data?.get("").toString()
             }
             .addOnFailureListener{
