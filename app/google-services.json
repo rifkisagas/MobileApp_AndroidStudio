@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1052512728966",
+    "project_id": "studikasus-mobile5",
+    "storage_bucket": "studikasus-mobile5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052512728966:android:e8a92e0eed4c64cb7e1e07",
+        "android_client_info": {
+          "package_name": "com.example.studikasus_mobile5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052512728966-grr5ojkhvcjnsjsan7ihsralj08f8unc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studikasus_mobile5",
+            "certificate_hash": "b8eb0b79a57b9889d563958c5c8e2ce959139b12"
+          }
+        },
+        {
+          "client_id": "1052512728966-pfv7jhfr1kg0e9sdhmnnjpa783lsmd6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIz4kMZ-DhP18sG8IG1n2pvxkRg9x60pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052512728966-pfv7jhfr1kg0e9sdhmnnjpa783lsmd6f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
